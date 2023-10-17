@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:italic=1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>Registration</header>
+        <form onsubmit="return validateForm()">
+            <div class="details personal">
+                <span class="title">Personal Details</span>
+                <div class="fields">
+                    <div class="input-field">
+                        <label class="label" for="fullName">Full Name:</label>
+                        <input class="input" type="text" id="fullName" placeholder="Enter Your Name">
+                    </div>
+                    <div class="input-field">
+                        <label class="label" for="dob">Date of Birth:</label>
+                        <input class="input" type="date" id="dob">
+                    </div>
+                    <div class="input-field">
+                        <label class="label" for="email">Email:</label>
+                        <input class="input" type="email" id="email" placeholder="Enter Your Email">
+                    </div>
+                    <div class="input-field">
+                        <label class="label" for="occupation">Occupation:</label>
+                        <input class="input" type="text" id="occupation" placeholder="Enter Your Occupation">
+                    </div>
+                    <div class="input-field">
+                        <label class="label" for="phoneNumber">Phone Number:</label>
+                        <input class="input" type="tel" id="phoneNumber" placeholder="Enter Your Phone Number">
+                    </div>
+
+                    <div class="input-field">
+                        <label class="label" for="gender">Gender:</label>
+                        <select id="gender" class="input">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" id="registrationForm">
+                        <span class="transition"></span>
+                        <span class="gradient"></span>
+                        <span class="label">Sign Up</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="code.js"></script>
+</body>
+
+</html>
